@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logo_white"
+    android:layout_width="200dp"
+    android:layout_height="@dimen/materialviewpager_logoHeight"
+    android:text="成长来源于不断学习，泡妞也是一样。"
+    />

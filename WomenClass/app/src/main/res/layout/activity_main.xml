@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.xiaoxin.womenclass.View.MoveImageView.MovingImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome"
+        app:miv_load_on_create="true"
+        app:miv_max_relative_size="3"
+        app:miv_min_relative_offset="0.1"
+        app:miv_repetitions="-1"
+        app:miv_speed="150"
+        app:miv_start_delay="1000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215dp" >
+
+        <com.xiaoxin.womenclass.View.shimmer.ShimmerTextView
+            android:id="@+id/shimmer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="只是一次知識的總結 By小新"
+            android:textColor="#C6C2C2"
+            android:textSize="18dp"
+            app:reflectionColor="#FEFCFC" />
+
+        <com.xiaoxin.womenclass.View.CircleButton
+            android:id="@+id/shimmer_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/shimmer_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/start"
+            app:cb_color="#FEFCFC"
+            app:cb_pressedRingWidth="25dip" />
+    </RelativeLayout>
+
+</RelativeLayout>
